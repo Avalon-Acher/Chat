@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabHost"
+        android:layout_marginTop="146dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#00000000">
+        <TabWidget
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@android:id/tabs"
+            android:background="#700401c6">
+
+        </TabWidget>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@android:id/tabcontent"
+            android:layout_marginTop="80dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_login"
+                android:orientation="vertical">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="username"
+                    android:id="@+id/ed_login_username"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_login_password"
+                    android:hint="password"
+                    android:inputType="textPassword"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_login"
+                    android:text="Login"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:background="#700401c6"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_register"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_register_username"
+                    android:hint="username"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_register_password"
+                    android:hint="password"
+                    android:inputType="textPassword"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_insure_password"
+                    android:inputType="textPassword"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint="insure your password"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_register"
+                    android:text="Register"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:background="#700401c6"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </TabHost>
+
+</RelativeLayout>
