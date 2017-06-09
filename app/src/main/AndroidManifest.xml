@@ -21,6 +21,9 @@
         <activity android:name=".activity.LoginOrRegisterActivity"/>
         <activity android:name=".activity.MainActivity"/>
 
+        <activity android:name=".activity.DressUpActivity"/>
+        <activity android:name=".activity.ProfileActivity"/>
+        <activity android:name=".activity.SettingActivity"/>
     </application>
 
 </manifest>
