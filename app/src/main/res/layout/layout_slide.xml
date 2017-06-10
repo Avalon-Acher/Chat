@@ -77,7 +77,7 @@
             app:pic="@drawable/profile"
             app:text="Profile"
             app:textSize="8sp"
-            app:textColoc="#000000"
+            app:textColor="#000000"
             android:layout_marginTop="10dp">
         </chat.archer.chat.view.PicAndTextBtn>
     </LinearLayout>
@@ -94,7 +94,7 @@
             app:pic="@drawable/setting"
             app:text="setting"
             app:textSize="8sp"
-            app:textColoc="#000000"
+            app:textColor="#000000"
             android:paddingLeft="10dp"
             android:layout_weight="1">
         </chat.archer.chat.view.PicAndTextBtn>

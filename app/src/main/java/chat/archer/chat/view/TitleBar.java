@@ -49,7 +49,9 @@ public class TitleBar extends RelativeLayout{
         setButtonClickListener();
 
     }
-
+    public void setTitleText(String titleText) {
+        tvTitle.setText(titleText);
+    }
     public interface titleBarClickListener{
         void leftButtonClick();
         void rightButtonClick();

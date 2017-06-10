@@ -1,6 +1,7 @@
 package chat.archer.chat.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 import java.util.List;
 
 import chat.archer.chat.R;
+import chat.archer.chat.activity.ChatRoomActivity;
 import chat.archer.chat.util.model.UserItemMsg;
 
 /**
@@ -61,7 +63,9 @@ public class AdapterUserItem extends RecyclerView.Adapter<AdapterUserItem.BaseVi
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(context,tvUsername.getText().toString(),Toast.LENGTH_SHORT).show();
+                  Intent intent=new Intent(context, ChatRoomActivity.class);
+                    intent.putExtra("username",tvUsername.getText().toString());
+                    context.startActivity(intent);
                 }
             });
 

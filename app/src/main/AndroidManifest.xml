@@ -24,6 +24,7 @@
         <activity android:name=".activity.DressUpActivity"/>
         <activity android:name=".activity.ProfileActivity"/>
         <activity android:name=".activity.SettingActivity"/>
+        <activity android:name=".activity.ChatRoomActivity"/>
     </application>
 
 </manifest>
