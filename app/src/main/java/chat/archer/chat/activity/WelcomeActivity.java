@@ -38,12 +38,14 @@ public class WelcomeActivity extends AppCompatActivity {
         boolean welcome=sharedPreferences.getBoolean("welcome",true);
         if(!welcome){
             handler.sendEmptyMessageDelayed(GO_HOME,DELAY);
+            //goHome();
         }else {
             handler.sendEmptyMessageDelayed(GO_GUIDE,DELAY);
             //编辑Sharepreference中welcome变量,表示第一次已经进入过了
             SharedPreferences.Editor editor=sharedPreferences.edit();
             editor.putBoolean("welcome",false);
             editor.apply();
+            //goGuide();
         }
     }
     private void goHome(){

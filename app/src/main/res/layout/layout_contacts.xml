@@ -27,7 +27,7 @@
     </android.support.v7.widget.RecyclerView>
 
 
-    <org.fitzeng.zzchat.view.PicAndTextBtn
+    <chat.archer.chat.view.PicAndTextBtn
         android:id="@+id/patb_bar__contacts"
         app:pic="@drawable/rise"
         app:text="Contacts"
@@ -37,7 +37,7 @@
         android:background="#dcdcdc"
         android:layout_width="match_parent"
         android:layout_height="46dp">
-    </org.fitzeng.zzchat.view.PicAndTextBtn>
+    </chat.archer.chat.view.PicAndTextBtn>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_list_contacts"

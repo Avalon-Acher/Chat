@@ -11,7 +11,7 @@
         android:id="@+id/tb_chat_room"
         app:leftBackground="@drawable/returned"
         app:titleTextSize="8sp"
-        app:titleTextColor="#ffffff">
+        app:titleTextColor="#000000">
     </chat.archer.chat.view.TitleBar>
 
     <ScrollView

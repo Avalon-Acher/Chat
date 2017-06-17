@@ -3,6 +3,7 @@ package chat.archer.chat.adapter;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -64,6 +65,8 @@ public class AdapterUserItem extends RecyclerView.Adapter<AdapterUserItem.BaseVi
                 @Override
                 public void onClick(View v) {
                   Intent intent=new Intent(context, ChatRoomActivity.class);
+                    Log.d("AdapterUserItem",tvUsername.getText().toString());
+
                     intent.putExtra("username",tvUsername.getText().toString());
                     context.startActivity(intent);
                 }

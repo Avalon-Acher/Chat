@@ -49,8 +49,8 @@ public class TitleBar extends RelativeLayout{
         setButtonClickListener();
 
     }
-    public void setTitleText(String titleText) {
-        tvTitle.setText(titleText);
+    public void setTitleText(String value) {
+        tvTitle.setText(value);
     }
     public interface titleBarClickListener{
         void leftButtonClick();
@@ -85,7 +85,7 @@ public class TitleBar extends RelativeLayout{
         leftTextColor=typedArray.getColor(R.styleable.TitleBar_leftTextColor,0);
         leftBackground=typedArray.getDrawable(R.styleable.TitleBar_leftBackground);
 
-        titleText=typedArray.getString(R.styleable.TitleBar_rightText);
+        titleText=typedArray.getString(R.styleable.TitleBar_titleText);
         titleTextSize=typedArray.getDimension(R.styleable.TitleBar_titleTextSize,24);
         titleTextColor=typedArray.getColor(R.styleable.TitleBar_titleTextColor,0);
         titleBackground=typedArray.getDrawable(R.styleable.TitleBar_titleBackground);
@@ -131,6 +131,8 @@ public class TitleBar extends RelativeLayout{
         LayoutParams btnRightLayoutParams=new LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         btnRightLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_RIGHT,TRUE);
         addView(btnRight,btnRightLayoutParams);
+
+       // tvTitle.setGravity(CENTER_VERTICAL);
 
         LayoutParams titleLayoutParams=new LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.MATCH_PARENT);
         titleLayoutParams.addRule(RelativeLayout.CENTER_IN_PARENT);
